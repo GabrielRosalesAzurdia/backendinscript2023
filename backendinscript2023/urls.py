@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
+tarjetaspatters = [
     path('tarjeta1/' , include('tarjeta1.urls')),
     path('tarjeta2/' , include('tarjeta2.urls')),
     path('tarjeta3/' , include('tarjeta3.urls')),
+]
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path('',include(tarjetaspatters))
 ]

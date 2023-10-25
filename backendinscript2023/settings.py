@@ -48,9 +48,6 @@ INSTALLED_APPS = [
     'tarjeta3'
 ]
 
-#test
-#test2
-#test3
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
